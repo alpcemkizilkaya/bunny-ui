@@ -6,7 +6,7 @@
       <vuetable ref="vuetable"
                 data-path="content"
                 pagination-path="pagination"
-                api-url="http://bunnyuserapi-env.eba-zfubcujv.us-west-2.elasticbeanstalk.com/user/list"
+                :api-url=listUrl
                 :fields=fields
                 :api-mode="true"
                 :load-on-start="true"

@@ -8,7 +8,7 @@
         <vuetable ref="vuetable"
                   data-path="content"
                   pagination-path="pagination"
-                  api-url="http://bunnytaskapi-env.eba-x2dqgurw.us-west-2.elasticbeanstalk.com/task/list"
+                  :api-url="listUrl"
                   :query-params="makeQueryParams"
                   :fields=fields
                   :api-mode="true"

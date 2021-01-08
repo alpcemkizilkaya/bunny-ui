@@ -1,7 +1,7 @@
 import ApiService from "@/service/ApiService";
 
 const ROOT_URL = '/user';
-const BASE_URL = 'http://bunnyuserapi-env.eba-zfubcujv.us-west-2.elasticbeanstalk.com';
+const BASE_URL = process.env.VUE_APP_USER_API_BASE_URL;
 const UserService = new ApiService(BASE_URL,ROOT_URL,{
     updateUser : function (ctx,onSuccess,onError,data){
         this.apiPost(ctx,'',data,onSuccess,onError);

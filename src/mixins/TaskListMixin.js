@@ -5,9 +5,8 @@ export default {
     data () {
 
         return {
+            listUrl:TaskService.baseUrl+TaskService.apiRoot+"/list",
             fields:     [
-                //...
-
                 "id",
                 "description",
                 "state",

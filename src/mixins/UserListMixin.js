@@ -5,9 +5,8 @@ export default {
     data () {
 
         return {
+            listUrl:UserService.baseUrl+UserService.apiRoot+"/list",
             fields:     [
-                //...
-
                 "id",
                 "name",
                 {
